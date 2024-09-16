@@ -15,6 +15,7 @@ open class Vet: Identifiable {
     var name : String
     var surName : String
     var assignedPets : [Pet]
+    var appointments: [Appointment]
     
     init(name: String, surName: String, assignedPets: [Pet]) {
         self.name = name

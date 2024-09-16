@@ -13,8 +13,11 @@ class Pet: Identifiable {
     
     let id : String = UUID().uuidString
     var name : String
-    
-    init(name: String) {
+    @Relationship(inverse: \Vet.assignedPets)
+    var vet: Vet
+ 
+    init(name: String, vet: Vet) {
         self.name = name
+        self.vet = vet
     }
 }
