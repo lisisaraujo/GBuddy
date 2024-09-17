@@ -11,6 +11,8 @@
 		A7047B982C987239000E34F9 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B972C987239000E34F9 /* Appointment.swift */; };
 		A7047B9A2C987A7D000E34F9 /* Vaccine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B992C987A7D000E34F9 /* Vaccine.swift */; };
 		A7047B9C2C987AF5000E34F9 /* MedicalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B9B2C987AF5000E34F9 /* MedicalRecord.swift */; };
+		A7AEC1F62C99973F00369F42 /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC1F52C99973F00369F42 /* HealthDetailsView.swift */; };
+		A7AEC1F82C99974C00369F42 /* AddHealthTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC1F72C99974C00369F42 /* AddHealthTrackView.swift */; };
 		B3518D022C98458A00510A60 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D012C98458A00510A60 /* HomeTabView.swift */; };
 		B3518D042C98459600510A60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D032C98459600510A60 /* HomeView.swift */; };
 		B3518D062C9845B500510A60 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D052C9845B500510A60 /* Pet.swift */; };
@@ -27,6 +29,8 @@
 		A7047B972C987239000E34F9 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		A7047B992C987A7D000E34F9 /* Vaccine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaccine.swift; sourceTree = "<group>"; };
 		A7047B9B2C987AF5000E34F9 /* MedicalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecord.swift; sourceTree = "<group>"; };
+		A7AEC1F52C99973F00369F42 /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthDetailsView.swift; path = ../../../HealthDetailsView.swift; sourceTree = "<group>"; };
+		A7AEC1F72C99974C00369F42 /* AddHealthTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddHealthTrackView.swift; path = ../../../AddHealthTrackView.swift; sourceTree = "<group>"; };
 		B3518D012C98458A00510A60 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		B3518D032C98459600510A60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B3518D052C9845B500510A60 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		B3518D102C9860BA00510A60 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				A7AEC1F52C99973F00369F42 /* HealthDetailsView.swift */,
+				A7AEC1F72C99974C00369F42 /* AddHealthTrackView.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3518D082C98466A00510A60 /* PetView.swift in Sources */,
+				A7AEC1F62C99973F00369F42 /* HealthDetailsView.swift in Sources */,
 				A7047B9A2C987A7D000E34F9 /* Vaccine.swift in Sources */,
 				B3518D062C9845B500510A60 /* Pet.swift in Sources */,
 				B3518D022C98458A00510A60 /* HomeTabView.swift in Sources */,
@@ -214,6 +221,7 @@
 				B3518D0A2C98499500510A60 /* PetSelectorElement.swift in Sources */,
 				B3518D042C98459600510A60 /* HomeView.swift in Sources */,
 				DB9E9DEC2C9466C800B47DFA /* ContentView.swift in Sources */,
+				A7AEC1F82C99974C00369F42 /* AddHealthTrackView.swift in Sources */,
 				DB9E9DEA2C9466C800B47DFA /* Projektwoche1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
