@@ -10,17 +10,16 @@ import SwiftData
 
 @Model
 class MedicalRecord {
-let Id: String = UUID().uuidString
-var allergies: [String] = []
-var medications: [String] = []
-var appointments: [Appointment] = []
-var vaccionations: [Vaccine] = []
+    let id: String = UUID().uuidString
+    var allergies: [String]
+    var medications: [String]
+    var appointments: [Appointment]
+    var vaccinations: [Vaccine]
 
-    init(allergies: [String], medications: [String], appointments: [Appointment], vaccionations: [Vaccine]) {
+    init(allergies: [String] = [], medications: [String] = [], appointments: [Appointment] = [], vaccinations: [Vaccine] = []) {
         self.allergies = allergies
         self.medications = medications
         self.appointments = appointments
-        self.vaccionations = vaccionations
+        self.vaccinations = vaccinations
     }
-
 }

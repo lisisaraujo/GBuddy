@@ -14,7 +14,7 @@ class Vaccine: Identifiable {
     var name : String
     var vaccinatedOn : Date
     var vaccinatedUntil :  Date
-    @Relationship(inverse: \MedicalRecord.vaccionations)
+    @Relationship(inverse: \MedicalRecord.vaccinations)
     var medicalRecord: MedicalRecord
     
     init(name: String, vaccinatedOn: Date, vaccinatedUntil: Date, medicalRecord: MedicalRecord) {

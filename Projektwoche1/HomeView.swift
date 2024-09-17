@@ -37,10 +37,10 @@ struct HomeView: View {
     let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! ModelContainer(for: Pet.self, configurations: configuration)
     
-    //   Preview data
-    container.mainContext.insert(Pet(name: "Woofy"))
-    container.mainContext.insert(Pet(name: "Peppy"))
-    container.mainContext.insert(Pet(name: "Tiny"))
+    // Preview data
+    let samplePet = Pet(name: "Puppy", type: .cat, isChipped: true, birthDate: Date(), color: "Black", weight: 7.5, size: .big, breed: "None", medicalRecord: MedicalRecord(), owner: PetOwner(name: "Lisis", surName: "Araujo", ownedPets: []))
+    
+    container.mainContext.insert(samplePet)
     
     return HomeView()
         .modelContainer(container)
