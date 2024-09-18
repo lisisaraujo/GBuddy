@@ -12,7 +12,7 @@ import SwiftData
 @Model
 class Vet: Identifiable {
     let id: String = UUID().uuidString
-    var fullName : String
+    var fullName : String = ""
     var assignedPets : [Pet]
     var appointments: [Appointment]
     

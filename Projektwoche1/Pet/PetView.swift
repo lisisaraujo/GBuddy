@@ -37,7 +37,7 @@ struct PetView: View {
                     //                Birth day
                     ZStack{
                         Circle()
-                            .fill(.lightBlue)
+                            .fill(.blue)
                             .shadow(radius: 4)
                         VStack{
                             Image("cake")
@@ -56,7 +56,7 @@ struct PetView: View {
                     
                     ZStack{
                         Circle()
-                            .fill(.lightBlue)
+                            .fill(.blue)
                             .shadow(radius: 4)
                         VStack{
                             Image("pet_card")
@@ -199,9 +199,7 @@ struct PetView: View {
                             owner: PetOwner(
                                 name: "Tom",
                                 surName: "Owner",
-                                ownedPets: []),
-                            image: "dog"
-    )
+                                ownedPets: [])    )
     
     
     

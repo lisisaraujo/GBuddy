@@ -157,7 +157,7 @@ struct AddHealthTrackView: View {
     let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! ModelContainer(for: Pet.self, configurations: configuration)
     
-    let samplePet = Pet(name: "Baco", type: .cat, isChipped: true, birthDate: Date(), color: "Black", weight: 7.5, size: .big, breed: "None", medicalRecord: MedicalRecord(), owner: PetOwner(name: "Lisis", surName: "Araujo", ownedPets: []))
+    let samplePet = Pet(name: "Baco", type: .cat, isChipped: true, birthDate: Date(), color: "Black", weight: 7.5, size: .big, breed: "None", owner: PetOwner(name: "Lisis", surName: "Araujo", ownedPets: []))
     
     let sampleVet1 = Vet(fullName: "Joel Altes", assignedPets: [], appointments: [])
     let sampleVet2 = Vet(fullName: "Marta Smith", assignedPets: [], appointments: [])

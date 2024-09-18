@@ -51,7 +51,7 @@ class Pet: Identifiable {
     @Relationship(inverse: \PetOwner.ownedPets)
     var owner : PetOwner
     
-    init(name: String, type: PetType, isChipped: Bool, chipNum: Int? = nil, birthDate: Date, color: String, weight: Double, size: PetSize, breed: String, petsVet: Vet? = nil, medicalRecord: MedicalRecord, activities: [Activity], owner: PetOwner) {
+    init(name: String, type: PetType, isChipped: Bool, chipNum: Int? = nil, birthDate: Date, color: String, weight: Double, size: PetSize, breed: String, petsVet: Vet? = nil, medicalRecord: MedicalRecord = MedicalRecord(), activities: [Activity] = [], owner: PetOwner) {
         self.name = name
         self.type = type
         self.isChipped = isChipped
