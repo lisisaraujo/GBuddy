@@ -16,15 +16,13 @@ struct HealthItemView: View {
     var body: some View {
         VStack{
             VStack{
-                Text("\(title) (\(listOfItems.isEmpty ? "None" : String(listOfItems.count)))")
-                    .padding(.vertical)
-                
                 Image(systemName: iconName)
-                
+                Text(title)
+                    .padding(5)
             }        .padding()
             
         }
-        .frame(width: 150, height: 150)
+        .frame(width: 150, height: 120)
         .background(
             Rectangle()
                 .fill(.clear)

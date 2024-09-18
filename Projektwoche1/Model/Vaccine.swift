@@ -10,10 +10,10 @@ import SwiftData
 
 @Model
 class Vaccine: Identifiable {
-    let Id: String = UUID().uuidString
-    var name : String
-    var vaccinatedOn : Date
-    var vaccinatedUntil :  Date
+    let id: String = UUID().uuidString
+    var name: String
+    var vaccinatedOn: Date
+    var vaccinatedUntil: Date
     @Relationship(inverse: \MedicalRecord.vaccinations)
     var medicalRecord: MedicalRecord
     

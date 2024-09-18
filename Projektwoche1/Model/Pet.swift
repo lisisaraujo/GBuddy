@@ -35,9 +35,23 @@ class Pet: Identifiable {
     
     var activities : [Activity]
     
+    var image : String {
+        switch type{
+        case .dog:
+            return "dog"
+        case .cat:
+            return "kitty"
+        case .bird:
+            return "kitty"
+        case .other:
+            return "kitty"
+        }
+    }
+    
     @Relationship(inverse: \PetOwner.ownedPets)
     var owner : PetOwner
-    init(name: String, type: PetType, isChipped: Bool, chipNum: Int? = nil, birthDate: Date, color: String, weight: Double, size: PetSize, breed: String, petsVet: Vet? = nil, medicalRecord: MedicalRecord, activities: [Activity] = [], owner: PetOwner) {
+    
+    init(name: String, type: PetType, isChipped: Bool, chipNum: Int? = nil, birthDate: Date, color: String, weight: Double, size: PetSize, breed: String, petsVet: Vet? = nil, medicalRecord: MedicalRecord, activities: [Activity], owner: PetOwner) {
         self.name = name
         self.type = type
         self.isChipped = isChipped

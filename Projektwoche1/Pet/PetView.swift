@@ -5,50 +5,209 @@
 //  Created by Lisis Ruschel on 17.09.24.
 //
 
+//
+//  PetView.swift
+//  Projektwoche1
+//
+//  Created by Jakub Zwierz on 16.09.24.
+//
+
 import SwiftUI
 import SwiftData
 
 struct PetView: View {
     
-    // Pet view screen displays all the general information about the pet.
-    @State var pet: Pet
+    //    Pet view screen displays all the general information about the pet.
+    
+    @State var pet : Pet
     
     var body: some View {
-        VStack {
-            Text("This is a pet view screen")
-                .font(.headline)
-                .padding()
+        
+        VStack{
             
-            HStack {
-                Text("Pet's name:")
-                    .fontWeight(.bold)
-                Text(pet.name)
-                    .foregroundColor(.primary)
+            //    -----------------------------
+            //        Upper UI Stack
+            //    -----------------------------
+            VStack{
+                
+                //            Top Row
+                
+                HStack{
+                    
+                    //                Birth day
+                    ZStack{
+                        Circle()
+                            .fill(.lightBlue)
+                            .shadow(radius: 4)
+                        VStack{
+                            Image("cake")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                            Text("\(pet.birthDate.formatted(date: .numeric, time: .omitted))")
+                                .font(.custom("MarkerFelt-Thin", size: 20))
+                        }
+                    }
+                    .frame(width: 140, height: 140)
+                    
+                    Spacer()
+                        .frame(width: 80)
+                    
+                    //                Breed
+                    
+                    ZStack{
+                        Circle()
+                            .fill(.lightBlue)
+                            .shadow(radius: 4)
+                        VStack{
+                            Image("pet_card")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                            Text("\(pet.breed)")
+                                .font(.custom("MarkerFelt-Thin", size: 20))
+                        }
+                    }
+                    .frame(width: 120, height: 120)
+                        .offset(x:10, y: 40)
+                }
+                
+                //            Main Middle Circle
+                
+                HStack{
+                    ZStack{
+                        Circle()
+                            .fill(.lightBlue)
+                            .shadow(radius: 4)
+                        VStack{
+                            Image(pet.image)
+                                .resizable()
+                                .frame(width: 140, height: 170)
+                            Text("\(pet.name)")
+                                .font(.custom("MarkerFelt-Thin", size: 50))
+                                .offset(x:0, y:-20)
+                        }
+                    }
+                    .frame(width: 260, height: 260)
+                    
+                }
+                
+                //            Bottom Row
+                
+                HStack{
+                    
+                    //                Weight
+                    
+                    ZStack{
+                        Circle()
+                            .fill(.lightBlue)
+                            .shadow(radius: 4)
+                        VStack{
+                            Image("weight")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                            Text("\(pet.weight.formatted())")
+                                .font(.custom("MarkerFelt-Thin", size: 20))
+                        }
+                    }
+                    .frame(width: 120, height: 120)
+                        .offset(x:-20, y:-40)
+                    
+                    //                Size
+                    
+                    ZStack{
+                        Circle()
+                            .fill(.lightBlue)
+                            .shadow(radius: 4)
+                        VStack{
+                            Image("ruler")
+                                .resizable()
+                                .frame(width: 50, height: 40)
+                            Text("\(pet.size.rawValue)")
+                                .font(.custom("MarkerFelt-Thin", size: 20))
+                        }
+                    }
+                    .frame(width: 100, height: 100)
+                        .offset(x:-20, y:0)
+                    //                Color
+                    
+                    ZStack{
+                        Circle()
+                            .fill(.lightBlue)
+                            .shadow(radius: 4)
+                        VStack{
+                            Image("color_splatter")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                            Text("\(pet.color)")
+                                .font(.custom("MarkerFelt-Thin", size: 20))
+                        }
+                    }
+                    .frame(width: 100, height: 100)
+                        .offset(x:10, y:-40)
+                    
+                }
             }
-            .padding()
+            .background(Image("background_paws")
+                .resizable()
+                .scaledToFill()
+                .opacity(0.4)
+            )
             
-            // Additional pet information can be displayed here
-            Text("Pet's type: \(pet.type.rawValue)") // Assuming type is an enum with raw values
-            Text("Is Chipped: \(pet.isChipped ? "Yes" : "No")")
-            Text("Birth Date: \(pet.birthDate.formatted())") // Format date as needed
-            Text("Color: \(pet.color)")
-            Text("Weight: \(pet.weight, specifier: "%.1f") kg") // Format weight to one decimal place
-            Text("Size: \(pet.size.rawValue)") // Assuming size is an enum with raw values
-            Text("Breed: \(pet.breed)")// Assuming breed is an enum with raw values
+            //    -----------------------------
+            //        Lower UI Stack
+            //    -----------------------------
+            
+            VStack{
+                List{
+                    Section{
+                        Text("Some Data")
+                    }
+                    Section{
+                        Text("Some Data")
+                    }
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
-    let container = try! ModelContainer(for: Pet.self, configurations: configuration)
+    let container = try! ModelContainer(for: Pet.self, Appointment.self,  configurations: configuration)
     
-    // Preview data
-    let samplePet = Pet(name: "Puppy", type: .cat, isChipped: true, birthDate: Date(), color: "Black", weight: 7.5, size: .big, breed: "None", medicalRecord: MedicalRecord(), owner: PetOwner(name: "Lisis", surName: "Araujo", ownedPets: []))
+    let testPet : Pet = Pet(name: "Woofy",
+                            type: .dog,
+                            isChipped: false,
+                            birthDate: Date(),
+                            color: "Black",
+                            weight: 50,
+                            size: .big,
+                            breed: "Corgi",
+                            petsVet: Vet(fullName: "Jakub",
+                                         assignedPets: [],
+                                         appointments: []),
+                            medicalRecord: MedicalRecord(allergies: [],
+                                                         medications: [],
+                                                         appointments: [],
+                                                         vaccinations: []),
+                            activities : [Activity(name: "Test Activity",
+                                                   activityDescription: "Activity description",
+                                                   date: Date(),
+                                                   type: .sleep,
+                                                   duration: 10.0,
+                                                   isDone: false)],
+                            owner: PetOwner(
+                                name: "Tom",
+                                surName: "Owner",
+                                ownedPets: []),
+                            image: "dog"
+    )
     
-    container.mainContext.insert(samplePet)
-
-    return PetView(pet: samplePet)
+    
+    
+    //   Preview data
+    container.mainContext.insert(testPet)
+    
+    return PetView(pet: testPet)
         .modelContainer(container)
 }

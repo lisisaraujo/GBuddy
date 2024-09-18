@@ -16,7 +16,7 @@ struct HomeView: View {
     
 //    We are loading the pet data via query.
     
-    @Query var listOfPets : [Pet]
+    @Query var listOfPets : [Pet] = samplePets
     
     var body: some View {
         
@@ -38,9 +38,15 @@ struct HomeView: View {
     let container = try! ModelContainer(for: Pet.self, configurations: configuration)
     
     // Preview data
-    let samplePet = Pet(name: "Puppy", type: .cat, isChipped: true, birthDate: Date(), color: "Black", weight: 7.5, size: .big, breed: "None", medicalRecord: MedicalRecord(), owner: PetOwner(name: "Lisis", surName: "Araujo", ownedPets: []))
+    let samplePet = Pet(name: "Baco", type: .cat, isChipped: true, birthDate: Date(), color: "Black", weight: 7.5, size: .big, breed: "None", medicalRecord: MedicalRecord(), owner: PetOwner(name: "Lisis", surName: "Araujo", ownedPets: []))
+    
+    let samplePet1 =     Pet(name: "Rex", type: .dog, isChipped: false, birthDate: Date().addingTimeInterval(-31536000), color: "Brown", weight: 30.0, size: .medium, breed: "Labrador", medicalRecord: MedicalRecord(), owner: PetOwner(name: "Tom", surName: "Smith", ownedPets: []))
+    
+    let samplePet2 = Pet(name: "Tweety", type: .bird, isChipped: true, birthDate: Date().addingTimeInterval(-157788000), color: "Yellow", weight: 0.1, size: .small, breed: "Canary", medicalRecord: MedicalRecord(), owner: PetOwner(name: "Alice", surName: "Johnson", ownedPets: []))
     
     container.mainContext.insert(samplePet)
+    container.mainContext.insert(samplePet1)
+    container.mainContext.insert(samplePet2)
     
     return HomeView()
         .modelContainer(container)

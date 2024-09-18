@@ -11,6 +11,7 @@
 		A7047B982C987239000E34F9 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B972C987239000E34F9 /* Appointment.swift */; };
 		A7047B9A2C987A7D000E34F9 /* Vaccine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B992C987A7D000E34F9 /* Vaccine.swift */; };
 		A7047B9C2C987AF5000E34F9 /* MedicalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B9B2C987AF5000E34F9 /* MedicalRecord.swift */; };
+		A75814462C9B079A00A89F0F /* EditPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75814452C9B079A00A89F0F /* EditPetView.swift */; };
 		A7AEC2012C99A3DE00369F42 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2002C99A3DE00369F42 /* HealthView.swift */; };
 		A7AEC2032C99A3ED00369F42 /* AddHealthTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2022C99A3ED00369F42 /* AddHealthTrackView.swift */; };
 		A7AEC2052C99A46900369F42 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2042C99A46900369F42 /* Activity.swift */; };
@@ -20,6 +21,8 @@
 		A7AEC2112C99A73100369F42 /* HealthTrackDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2102C99A73100369F42 /* HealthTrackDetailsView.swift */; };
 		A7AEC2142C99DE1F00369F42 /* MedicalRecordSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2132C99DE1F00369F42 /* MedicalRecordSheetView.swift */; };
 		A7AEC2162C99E3AE00369F42 /* HealthItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2152C99E3AE00369F42 /* HealthItemView.swift */; };
+		A7AEC2192C9ADEEF00369F42 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2182C9ADEEF00369F42 /* Utils.swift */; };
+		A7AEC21B2C9AFB2800369F42 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC21A2C9AFB2800369F42 /* AddPetView.swift */; };
 		B3518D022C98458A00510A60 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D012C98458A00510A60 /* HomeTabView.swift */; };
 		B3518D042C98459600510A60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D032C98459600510A60 /* HomeView.swift */; };
 		B3518D062C9845B500510A60 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D052C9845B500510A60 /* Pet.swift */; };
@@ -35,6 +38,7 @@
 		A7047B972C987239000E34F9 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		A7047B992C987A7D000E34F9 /* Vaccine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaccine.swift; sourceTree = "<group>"; };
 		A7047B9B2C987AF5000E34F9 /* MedicalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecord.swift; sourceTree = "<group>"; };
+		A75814452C9B079A00A89F0F /* EditPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPetView.swift; sourceTree = "<group>"; };
 		A7AEC2002C99A3DE00369F42 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		A7AEC2022C99A3ED00369F42 /* AddHealthTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHealthTrackView.swift; sourceTree = "<group>"; };
 		A7AEC2042C99A46900369F42 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		A7AEC2102C99A73100369F42 /* HealthTrackDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackDetailsView.swift; sourceTree = "<group>"; };
 		A7AEC2132C99DE1F00369F42 /* MedicalRecordSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecordSheetView.swift; sourceTree = "<group>"; };
 		A7AEC2152C99E3AE00369F42 /* HealthItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthItemView.swift; sourceTree = "<group>"; };
+		A7AEC2182C9ADEEF00369F42 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A7AEC21A2C9AFB2800369F42 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
 		B3518D012C98458A00510A60 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		B3518D032C98459600510A60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B3518D052C9845B500510A60 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
@@ -94,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				A7AEC20E2C99A69200369F42 /* PetView.swift */,
+				A7AEC21A2C9AFB2800369F42 /* AddPetView.swift */,
+				A75814452C9B079A00A89F0F /* EditPetView.swift */,
 			);
 			path = Pet;
 			sourceTree = "<group>";
@@ -112,6 +120,14 @@
 				A7AEC2152C99E3AE00369F42 /* HealthItemView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		A7AEC2172C9ADEE300369F42 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEC2182C9ADEEF00369F42 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B3518D0D2C98602100510A60 /* Model */ = {
@@ -148,6 +164,7 @@
 		DB9E9DE82C9466C800B47DFA /* Projektwoche1 */ = {
 			isa = PBXGroup;
 			children = (
+				A7AEC2172C9ADEE300369F42 /* Utils */,
 				A7AEC2122C99DDF300369F42 /* SubViews */,
 				B3518D0D2C98602100510A60 /* Model */,
 				A7AEC1FD2C99A37F00369F42 /* Activity */,
@@ -259,9 +276,12 @@
 				B3518D042C98459600510A60 /* HomeView.swift in Sources */,
 				DB9E9DEC2C9466C800B47DFA /* ContentView.swift in Sources */,
 				A7AEC20F2C99A69200369F42 /* PetView.swift in Sources */,
+				A7AEC2192C9ADEEF00369F42 /* Utils.swift in Sources */,
 				A7AEC2092C99A5C600369F42 /* PetOwner.swift in Sources */,
 				A7AEC2032C99A3ED00369F42 /* AddHealthTrackView.swift in Sources */,
 				DB9E9DEA2C9466C800B47DFA /* Projektwoche1App.swift in Sources */,
+				A7AEC21B2C9AFB2800369F42 /* AddPetView.swift in Sources */,
+				A75814462C9B079A00A89F0F /* EditPetView.swift in Sources */,
 				A7AEC2112C99A73100369F42 /* HealthTrackDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

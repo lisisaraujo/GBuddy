@@ -10,8 +10,8 @@ import SwiftData
 
 @Model
 class Appointment: Identifiable {
-    let Id: String = UUID().uuidString
-    var name : String
+    let id: String = UUID().uuidString
+    var title : String
     var date : Date
     var comment : String
     @Relationship(inverse: \Vet.appointments)
@@ -20,8 +20,8 @@ class Appointment: Identifiable {
     @Relationship(inverse: \MedicalRecord.appointments)
     var medicalRecord: MedicalRecord
     
-    init(name: String, date: Date, comment: String, vet: Vet, medicalRecord: MedicalRecord) {
-        self.name = name
+    init(title: String, date: Date, comment: String = "", vet: Vet, medicalRecord: MedicalRecord) {
+        self.title = title
         self.date = date
         self.comment = comment
         self.vet = vet

@@ -11,7 +11,9 @@ import SwiftData
 struct HomeTabView: View {
     
     // The information about a single pet is being passed from the Home View.
-    @State var selectedPet: Pet = Pet(name: "Puppy", type: .cat, isChipped: true, birthDate: Date(), color: "Black", weight: 7.5, size: .big, breed: "None", medicalRecord: MedicalRecord(), owner: PetOwner(name: "Lisis", surName: "Araujo", ownedPets: []))
+    
+    @State var selectedPet : Pet
+    
     
     var body: some View {
         NavigationStack {
@@ -28,10 +30,17 @@ struct HomeTabView: View {
                         Label("Activities", systemImage: "flag.2.crossed.circle")
                     }
                 
-                // TODO: Replace it with HealthView
-                HealthView(selectedPet: $selectedPet, medicalRecord: selectedPet.medicalRecord)
+                HealthView(pet: selectedPet)
                     .tabItem {
                         Label("Health", systemImage: "cross.circle")
+                    }.toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            NavigationLink(destination: AddHealthTrackView(pet: selectedPet)) {
+                                Image(systemName: "plus")
+                                    .resizable()
+                                    .frame(width: 24, height: 24)
+                            }
+                        }
                     }
             }
         }
