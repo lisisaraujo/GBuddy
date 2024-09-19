@@ -10,16 +10,15 @@ import SwiftData
 
 
 @Model
-open class Vet: Identifiable {
-    let Id: String = UUID().uuidString
-    var name : String
-    var surName : String
+class Vet: Identifiable {
+    let id: String = UUID().uuidString
+    var fullName : String = ""
     var assignedPets : [Pet]
     var appointments: [Appointment]
     
-    init(name: String, surName: String, assignedPets: [Pet]) {
-        self.name = name
-        self.surName = surName
+    init(fullName: String, assignedPets: [Pet], appointments: [Appointment]) {
+        self.fullName = fullName
         self.assignedPets = assignedPets
+        self.appointments = appointments
     }
 }

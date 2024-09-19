@@ -11,10 +11,24 @@
 		A7047B982C987239000E34F9 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B972C987239000E34F9 /* Appointment.swift */; };
 		A7047B9A2C987A7D000E34F9 /* Vaccine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B992C987A7D000E34F9 /* Vaccine.swift */; };
 		A7047B9C2C987AF5000E34F9 /* MedicalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7047B9B2C987AF5000E34F9 /* MedicalRecord.swift */; };
+		A75814462C9B079A00A89F0F /* EditPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75814452C9B079A00A89F0F /* EditPetView.swift */; };
+		A75814482C9B0C0600A89F0F /* ActivityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75814472C9B0C0600A89F0F /* ActivityDetailsView.swift */; };
+		A758144A2C9B0C2100A89F0F /* ActivityOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75814492C9B0C2100A89F0F /* ActivityOverview.swift */; };
+		A758144C2C9B0DC300A89F0F /* BoxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758144B2C9B0DC300A89F0F /* BoxItem.swift */; };
+		A7AEC2012C99A3DE00369F42 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2002C99A3DE00369F42 /* HealthView.swift */; };
+		A7AEC2032C99A3ED00369F42 /* AddHealthTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2022C99A3ED00369F42 /* AddHealthTrackView.swift */; };
+		A7AEC2052C99A46900369F42 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2042C99A46900369F42 /* Activity.swift */; };
+		A7AEC2072C99A49300369F42 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2062C99A49300369F42 /* ActivityType.swift */; };
+		A7AEC2092C99A5C600369F42 /* PetOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2082C99A5C600369F42 /* PetOwner.swift */; };
+		A7AEC20F2C99A69200369F42 /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC20E2C99A69200369F42 /* PetView.swift */; };
+		A7AEC2112C99A73100369F42 /* HealthTrackDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2102C99A73100369F42 /* HealthTrackDetailsView.swift */; };
+		A7AEC2142C99DE1F00369F42 /* MedicalRecordSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2132C99DE1F00369F42 /* MedicalRecordSheetView.swift */; };
+		A7AEC2162C99E3AE00369F42 /* HealthItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2152C99E3AE00369F42 /* HealthItemView.swift */; };
+		A7AEC2192C9ADEEF00369F42 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC2182C9ADEEF00369F42 /* Utils.swift */; };
+		A7AEC21B2C9AFB2800369F42 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEC21A2C9AFB2800369F42 /* AddPetView.swift */; };
 		B3518D022C98458A00510A60 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D012C98458A00510A60 /* HomeTabView.swift */; };
 		B3518D042C98459600510A60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D032C98459600510A60 /* HomeView.swift */; };
 		B3518D062C9845B500510A60 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D052C9845B500510A60 /* Pet.swift */; };
-		B3518D082C98466A00510A60 /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D072C98466A00510A60 /* PetView.swift */; };
 		B3518D0A2C98499500510A60 /* PetSelectorElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3518D092C98499500510A60 /* PetSelectorElement.swift */; };
 		DB9E9DEA2C9466C800B47DFA /* Projektwoche1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E9DE92C9466C800B47DFA /* Projektwoche1App.swift */; };
 		DB9E9DEC2C9466C800B47DFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E9DEB2C9466C800B47DFA /* ContentView.swift */; };
@@ -27,10 +41,24 @@
 		A7047B972C987239000E34F9 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		A7047B992C987A7D000E34F9 /* Vaccine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaccine.swift; sourceTree = "<group>"; };
 		A7047B9B2C987AF5000E34F9 /* MedicalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecord.swift; sourceTree = "<group>"; };
+		A75814452C9B079A00A89F0F /* EditPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPetView.swift; sourceTree = "<group>"; };
+		A75814472C9B0C0600A89F0F /* ActivityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsView.swift; sourceTree = "<group>"; };
+		A75814492C9B0C2100A89F0F /* ActivityOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityOverview.swift; sourceTree = "<group>"; };
+		A758144B2C9B0DC300A89F0F /* BoxItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxItem.swift; sourceTree = "<group>"; };
+		A7AEC2002C99A3DE00369F42 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		A7AEC2022C99A3ED00369F42 /* AddHealthTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHealthTrackView.swift; sourceTree = "<group>"; };
+		A7AEC2042C99A46900369F42 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		A7AEC2062C99A49300369F42 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		A7AEC2082C99A5C600369F42 /* PetOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetOwner.swift; sourceTree = "<group>"; };
+		A7AEC20E2C99A69200369F42 /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
+		A7AEC2102C99A73100369F42 /* HealthTrackDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackDetailsView.swift; sourceTree = "<group>"; };
+		A7AEC2132C99DE1F00369F42 /* MedicalRecordSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecordSheetView.swift; sourceTree = "<group>"; };
+		A7AEC2152C99E3AE00369F42 /* HealthItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthItemView.swift; sourceTree = "<group>"; };
+		A7AEC2182C9ADEEF00369F42 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A7AEC21A2C9AFB2800369F42 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
 		B3518D012C98458A00510A60 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		B3518D032C98459600510A60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B3518D052C9845B500510A60 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
-		B3518D072C98466A00510A60 /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
 		B3518D092C98499500510A60 /* PetSelectorElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSelectorElement.swift; sourceTree = "<group>"; };
 		DB9E9DE62C9466C800B47DFA /* Projektwoche1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projektwoche1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9E9DE92C9466C800B47DFA /* Projektwoche1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projektwoche1App.swift; sourceTree = "<group>"; };
@@ -50,6 +78,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7AEC1FB2C999AB200369F42 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A7AEC1FC2C999D2C00369F42 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEC2002C99A3DE00369F42 /* HealthView.swift */,
+				A7AEC2022C99A3ED00369F42 /* AddHealthTrackView.swift */,
+				A7AEC2102C99A73100369F42 /* HealthTrackDetailsView.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		A7AEC1FD2C99A37F00369F42 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				A75814472C9B0C0600A89F0F /* ActivityDetailsView.swift */,
+				A75814492C9B0C2100A89F0F /* ActivityOverview.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		A7AEC1FE2C99A38900369F42 /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEC20E2C99A69200369F42 /* PetView.swift */,
+				A7AEC21A2C9AFB2800369F42 /* AddPetView.swift */,
+				A75814452C9B079A00A89F0F /* EditPetView.swift */,
+			);
+			path = Pet;
+			sourceTree = "<group>";
+		};
+		A7AEC1FF2C99A38D00369F42 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B3518D092C98499500510A60 /* PetSelectorElement.swift */,
+				A758144B2C9B0DC300A89F0F /* BoxItem.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A7AEC2122C99DDF300369F42 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEC2132C99DE1F00369F42 /* MedicalRecordSheetView.swift */,
+				A7AEC2152C99E3AE00369F42 /* HealthItemView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		A7AEC2172C9ADEE300369F42 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEC2182C9ADEEF00369F42 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B3518D0D2C98602100510A60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,36 +147,12 @@
 				A7047B972C987239000E34F9 /* Appointment.swift */,
 				A7047B992C987A7D000E34F9 /* Vaccine.swift */,
 				A7047B9B2C987AF5000E34F9 /* MedicalRecord.swift */,
+				A7AEC2042C99A46900369F42 /* Activity.swift */,
+				A7AEC2062C99A49300369F42 /* ActivityType.swift */,
+				B3518D052C9845B500510A60 /* Pet.swift */,
+				A7AEC2082C99A5C600369F42 /* PetOwner.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		B3518D0E2C98604500510A60 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		B3518D0F2C9860B000510A60 /* Pet */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pet;
-			sourceTree = "<group>";
-		};
-		B3518D102C9860BA00510A60 /* Health */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Health;
-			sourceTree = "<group>";
-		};
-		B3518D112C9860BF00510A60 /* Activity  */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Activity ";
 			sourceTree = "<group>";
 		};
 		DB9E9DDD2C9466C800B47DFA = {
@@ -108,19 +174,19 @@
 		DB9E9DE82C9466C800B47DFA /* Projektwoche1 */ = {
 			isa = PBXGroup;
 			children = (
+				A7AEC2172C9ADEE300369F42 /* Utils */,
+				A7AEC2122C99DDF300369F42 /* SubViews */,
 				B3518D0D2C98602100510A60 /* Model */,
-				B3518D112C9860BF00510A60 /* Activity  */,
-				B3518D102C9860BA00510A60 /* Health */,
-				B3518D0F2C9860B000510A60 /* Pet */,
-				B3518D0E2C98604500510A60 /* UI */,
+				A7AEC1FD2C99A37F00369F42 /* Activity */,
+				A7AEC1FC2C999D2C00369F42 /* Health */,
+				A7AEC1FE2C99A38900369F42 /* Pet */,
+				A7AEC1FF2C99A38D00369F42 /* UI */,
+				A7AEC1FB2C999AB200369F42 /* New Group */,
 				DB9E9DE92C9466C800B47DFA /* Projektwoche1App.swift */,
 				DB9E9DEB2C9466C800B47DFA /* ContentView.swift */,
 				DB9E9DED2C9466C900B47DFA /* Assets.xcassets */,
 				DB9E9DEF2C9466C900B47DFA /* Preview Content */,
 				B3518D012C98458A00510A60 /* HomeTabView.swift */,
-				B3518D052C9845B500510A60 /* Pet.swift */,
-				B3518D072C98466A00510A60 /* PetView.swift */,
-				B3518D092C98499500510A60 /* PetSelectorElement.swift */,
 				B3518D032C98459600510A60 /* HomeView.swift */,
 			);
 			path = Projektwoche1;
@@ -204,17 +270,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3518D082C98466A00510A60 /* PetView.swift in Sources */,
+				A7AEC2072C99A49300369F42 /* ActivityType.swift in Sources */,
+				A7AEC2012C99A3DE00369F42 /* HealthView.swift in Sources */,
+				A7AEC2052C99A46900369F42 /* Activity.swift in Sources */,
 				A7047B9A2C987A7D000E34F9 /* Vaccine.swift in Sources */,
 				B3518D062C9845B500510A60 /* Pet.swift in Sources */,
 				B3518D022C98458A00510A60 /* HomeTabView.swift in Sources */,
 				A7047B982C987239000E34F9 /* Appointment.swift in Sources */,
+				A7AEC2142C99DE1F00369F42 /* MedicalRecordSheetView.swift in Sources */,
+				A75814482C9B0C0600A89F0F /* ActivityDetailsView.swift in Sources */,
 				A7047B9C2C987AF5000E34F9 /* MedicalRecord.swift in Sources */,
 				A7047B962C9871C5000E34F9 /* Vet.swift in Sources */,
 				B3518D0A2C98499500510A60 /* PetSelectorElement.swift in Sources */,
+				A7AEC2162C99E3AE00369F42 /* HealthItemView.swift in Sources */,
 				B3518D042C98459600510A60 /* HomeView.swift in Sources */,
 				DB9E9DEC2C9466C800B47DFA /* ContentView.swift in Sources */,
+				A758144C2C9B0DC300A89F0F /* BoxItem.swift in Sources */,
+				A7AEC20F2C99A69200369F42 /* PetView.swift in Sources */,
+				A7AEC2192C9ADEEF00369F42 /* Utils.swift in Sources */,
+				A7AEC2092C99A5C600369F42 /* PetOwner.swift in Sources */,
+				A7AEC2032C99A3ED00369F42 /* AddHealthTrackView.swift in Sources */,
 				DB9E9DEA2C9466C800B47DFA /* Projektwoche1App.swift in Sources */,
+				A7AEC21B2C9AFB2800369F42 /* AddPetView.swift in Sources */,
+				A758144A2C9B0C2100A89F0F /* ActivityOverview.swift in Sources */,
+				A75814462C9B079A00A89F0F /* EditPetView.swift in Sources */,
+				A7AEC2112C99A73100369F42 /* HealthTrackDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +435,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +464,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
